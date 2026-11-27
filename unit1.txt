@@ -1,0 +1,83 @@
+# PRACTICAL NO. 2
+
+**Title:** Develop a Servlet application to demonstrate Servlet architecture and lifecycle methods.
+
+## 1. Aim
+To study and develop a Servlet application that demonstrates Servlet architecture and its lifecycle methods.
+
+## 2. Theory
+
+A Servlet is a Java-based server-side technology used to develop dynamic web applications. It runs on a web server or servlet container and handles requests received from clients, processes them and generates dynamic responses.
+
+Servlets are mainly used to process user requests, interact with databases and generate dynamic HTML content. They are part of Java EE (Jakarta EE) technology and provide a platform-independent approach to developing web applications.
+
+Unlike traditional CGI programs, Servlets are efficient because they use threads to handle multiple client requests instead of creating a separate process for every request.
+
+## 3. Servlet Architecture
+
+Servlet architecture describes how a client communicates with a web server through a Servlet.
+
+The main components of Servlet architecture are:
+
+1. **Client:** The client is generally a web browser that sends HTTP requests to the server.
+2. **Web Server:** It receives requests from clients and forwards Servlet-related requests to the Servlet container.
+3. **Servlet Container:** It manages the complete lifecycle of Servlets. It creates Servlet objects, handles requests and manages responses.
+4. **Servlet:** It processes client requests, executes application logic and generates responses.
+5. **Database:** A Servlet can communicate with a database using JDBC to retrieve, insert, update or delete information.
+
+### Working of Servlet Architecture
+
+1. The client sends an HTTP request through a web browser.
+2. The web server receives the request.
+3. The Servlet container identifies the appropriate Servlet.
+4. If the Servlet is not already loaded, the container loads and initializes it.
+5. The Servlet processes the request using the service() method.
+6. The Servlet generates an appropriate response.
+7. The response is sent back to the client through the web server.
+
+## 4. Servlet Lifecycle
+
+The Servlet lifecycle represents the different stages through which a Servlet passes from creation to destruction. The Servlet container manages these stages.
+
+The lifecycle consists of the following methods:
+
+**1. init() Method**
+
+- It is called only once when the Servlet is created.
+- It is used to initialize the Servlet.
+- It performs initialization tasks such as loading configuration information and establishing required resources.
+
+**2. service() Method**
+
+- It is called whenever the Servlet receives a client request.
+- It processes incoming requests and generates responses.
+- It determines the appropriate HTTP method, such as GET or POST.
+- It may execute doGet() or doPost() methods depending on the request.
+
+**3. destroy() Method**
+
+- It is called only once before the Servlet is removed from service.
+- It releases resources used by the Servlet.
+- It performs cleanup operations such as closing database connections.
+
+## 5. Advantages of Servlets
+
+1. Servlets are platform-independent because they are based on Java.
+2. They provide better performance than traditional CGI applications.
+3. They support handling multiple client requests.
+4. They provide security features through Java.
+5. They can communicate with databases using JDBC.
+6. They are reusable and suitable for developing dynamic web applications.
+
+## 6. Applications of Servlets
+
+- Login and registration systems.
+- Online banking applications.
+- E-commerce websites.
+- Student management systems.
+- Online reservation systems.
+- Dynamic web applications.
+
+## 7. Conclusion
+
+Thus, we studied Servlet architecture and its lifecycle methods. We understood how a Servlet processes client requests and generates dynamic responses. We also studied the important lifecycle methods init(), service() and destroy() that are managed by the Servlet container.

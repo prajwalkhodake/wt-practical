@@ -1,0 +1,145 @@
+# PRACTICAL NO. 5
+
+**Title:** Integrate an external database with Django instead of the default SQLite database.
+
+## 1. Aim
+
+To study the integration of an external relational database with a Django application instead of using the default SQLite database.
+
+## 2. Theory
+
+Django is a high-level, open-source Python web framework used for developing secure and scalable web applications. It follows the Model-Template-View (MTV) architectural pattern.
+
+By default, Django uses SQLite as its database. However, Django also supports external databases such as MySQL, PostgreSQL and Oracle.
+
+An external database can be connected to a Django project by configuring the DATABASES setting in the settings.py file.
+
+Django provides an Object Relational Mapper (ORM), which allows developers to interact with databases using Python classes and objects instead of writing SQL queries for every operation.
+
+Integrating an external database is useful when developing applications that require better database management, scalability and support for multiple users.
+
+## 3. Need for an External Database
+
+SQLite is suitable for small applications and development purposes. However, larger applications may require a dedicated database management system.
+
+Some reasons for using an external database are:
+
+1. Better support for large amounts of data.
+2. Improved database management.
+3. Support for multiple users and concurrent operations.
+4. Better control over database security.
+5. Advanced database features.
+6. Suitable for production-level applications.
+
+## 4. Django Database Configuration
+
+Django stores database configuration information in the settings.py file.
+
+The DATABASES setting defines the database engine, database name, username, password, host and port.
+
+The important configuration parameters are:
+
+**1. ENGINE**
+
+It specifies the database backend used by the Django application.
+
+Examples include:
+- MySQL
+- PostgreSQL
+- SQLite
+- Oracle
+
+**2. NAME**
+
+It specifies the name of the database to which the Django application connects.
+
+**3. USER**
+
+It specifies the username required to access the database.
+
+**4. PASSWORD**
+
+It specifies the password associated with the database user.
+
+**5. HOST**
+
+It specifies the database server address. For a locally running database, it is generally localhost or 127.0.0.1.
+
+**6. PORT**
+
+It specifies the port number on which the database server is running.
+
+## 5. Steps for Integrating an External Database
+
+The general process of connecting an external database with Django involves the following steps:
+
+**Step 1: Install the Database Server**
+
+Install and configure an external database management system such as MySQL or PostgreSQL.
+
+**Step 2: Create a Database**
+
+Create a new database that will be used by the Django project.
+
+**Step 3: Install the Database Driver**
+
+Install the required Python database connector so that Django can communicate with the selected database.
+
+**Step 4: Configure Database Settings**
+
+Update the DATABASES configuration in the settings.py file with the appropriate database details.
+
+**Step 5: Define Django Models**
+
+Create models in the models.py file. Models represent database tables and their fields.
+
+**Step 6: Create Migrations**
+
+Use Django migration commands to generate migration files based on the defined models.
+
+**Step 7: Apply Migrations**
+
+Apply the migrations to create the required tables in the external database.
+
+**Step 8: Verify Database Connection**
+
+Run the Django application and verify that database operations are performed successfully.
+
+## 6. Django ORM
+
+ORM stands for Object Relational Mapper. It is a feature of Django that allows developers to interact with database tables using Python objects.
+
+In Django, each model generally represents a database table, and model fields represent table columns.
+
+The ORM provides methods for performing common database operations such as:
+
+- Creating new records.
+- Retrieving records.
+- Updating existing records.
+- Deleting records.
+- Filtering database information.
+
+The ORM reduces the need to write SQL queries manually and makes database operations easier to manage.
+
+## 7. Advantages of External Database Integration
+
+1. Supports different database management systems.
+2. Provides better scalability for larger applications.
+3. Allows centralized data management.
+4. Supports multiple users accessing the application.
+5. Django ORM simplifies database operations.
+6. Provides flexibility to change database backends.
+7. Suitable for developing real-world web applications.
+
+## 8. Applications
+
+- E-commerce websites.
+- Student management systems.
+- Hospital management systems.
+- Banking applications.
+- Employee management systems.
+- Online booking platforms.
+
+## 9. Conclusion
+
+Thus, we studied how to integrate an external database with a Django application instead of using the default SQLite database. We understood database configuration through the settings.py file, the role of database drivers, Django models, migrations and ORM. This helps in developing scalable and database-driven web applications.

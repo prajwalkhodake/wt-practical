@@ -1,0 +1,112 @@
+# PRACTICAL NO. 4
+
+**Title:** Write a JDBC program to execute SQL queries using the Statement interface.
+
+## 1. Aim
+
+To study JDBC connectivity and execute SQL queries using the Statement interface in Java.
+
+## 2. Theory
+
+JDBC stands for Java Database Connectivity. It is a standard Java API that allows Java applications to communicate with relational databases such as MySQL, Oracle and PostgreSQL.
+
+JDBC provides classes and interfaces that help developers establish database connections, execute SQL queries and retrieve results from databases.
+
+Using JDBC, a Java application can perform database operations such as inserting, updating, deleting and retrieving records.
+
+JDBC acts as a bridge between a Java application and a database management system.
+
+## 3. JDBC Architecture
+
+JDBC architecture explains how a Java application communicates with a database.
+
+The main components are:
+
+**1. Java Application**
+
+It is the application that contains Java code and performs database-related operations.
+
+**2. JDBC API**
+
+It provides classes and interfaces required for database connectivity and query execution.
+
+**3. JDBC Driver**
+
+A JDBC driver is software that enables communication between the Java application and a specific database.
+
+**4. Database**
+
+The database stores and manages the information requested by the Java application.
+
+### Working of JDBC
+
+1. Load or register the appropriate JDBC driver.
+2. Establish a connection with the database.
+3. Create a Statement object.
+4. Execute the required SQL query.
+5. Process the result returned by the database.
+6. Close the Statement and Connection objects.
+
+## 4. Statement Interface
+
+The Statement interface is an important part of JDBC. It is used to execute SQL statements against a database.
+
+A Statement object is created using the createStatement() method of the Connection interface.
+
+It is mainly suitable for executing simple and static SQL queries.
+
+The Statement interface provides three important methods:
+
+**1. executeQuery()**
+
+- It is used to execute SELECT queries.
+- It returns a ResultSet object.
+- The ResultSet contains records retrieved from the database.
+- It is generally used when data needs to be displayed or processed.
+
+**2. executeUpdate()**
+
+- It is used to execute INSERT, UPDATE and DELETE statements.
+- It returns an integer value representing the number of affected rows.
+- It is also used for certain database definition statements.
+
+**3. execute()**
+
+- It is used to execute different types of SQL statements.
+- It returns a boolean value.
+- It returns true if the result is a ResultSet; otherwise, it returns false.
+
+## 5. Important JDBC Classes and Interfaces
+
+**1. DriverManager:** It manages JDBC drivers and helps establish database connections.
+
+**2. Connection:** It represents an active connection between a Java application and a database.
+
+**3. Statement:** It is used to execute SQL queries.
+
+**4. ResultSet:** It stores the data returned by SELECT queries and allows the application to access records.
+
+**5. SQLException:** It handles database-related errors and exceptions.
+
+## 6. Advantages of JDBC
+
+1. JDBC provides standard database connectivity for Java applications.
+2. It supports different relational database management systems.
+3. It allows execution of SQL queries from Java programs.
+4. It supports database operations such as INSERT, UPDATE, DELETE and SELECT.
+5. It provides exception handling through SQLException.
+6. It supports transaction management.
+7. It allows Java applications to retrieve and process database records.
+
+## 7. Applications of JDBC
+
+- Student management systems.
+- Banking applications.
+- Employee management systems.
+- Online shopping applications.
+- Library management systems.
+- Inventory management applications.
+
+## 8. Conclusion
+
+Thus, we studied JDBC connectivity and the Statement interface. We understood how Java applications establish connections with databases and execute SQL queries. We also studied the important methods executeQuery(), executeUpdate() and execute() used for performing database operations.

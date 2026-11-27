@@ -1,0 +1,103 @@
+# PRACTICAL NO. 3
+
+**Title:** Develop a JSP application to accept user input and display dynamic output.
+
+## 1. Aim
+
+To study and develop a JSP application that accepts input from users and displays dynamic output using Java Server Pages.
+
+## 2. Theory
+
+JSP stands for Java Server Pages. It is a server-side technology used to create dynamic and interactive web pages. JSP allows Java code to be embedded inside HTML pages, making it easier to generate dynamic content.
+
+JSP is mainly used for developing the presentation layer of Java web applications. It works with a web server or JSP container, which converts JSP pages into Servlets and executes them on the server.
+
+When a user requests a JSP page, the server processes the JSP file and generates an HTML response that is sent back to the user's browser.
+
+JSP simplifies web development because developers can combine HTML and Java-based processing in a single page.
+
+## 3. Working of JSP
+
+The working of JSP involves the following steps:
+
+1. The user opens a JSP page through a web browser.
+2. The browser sends an HTTP request to the web server.
+3. The server forwards the request to the JSP container.
+4. The JSP container translates the JSP page into a Servlet.
+5. The generated Servlet is compiled into Java bytecode.
+6. The Servlet processes the request and generates dynamic HTML content.
+7. The server sends the generated HTML response to the browser.
+
+The translation and compilation generally occur when the JSP page is requested for the first time or when the JSP file is modified.
+
+## 4. Important JSP Elements
+
+JSP provides different elements for embedding Java code and controlling dynamic content.
+
+**1. JSP Directives**
+
+Directives provide instructions to the JSP container. They define page-level settings and other configurations.
+
+Examples:
+- Page directive
+- Include directive
+- Taglib directive
+
+**2. JSP Scriptlets**
+
+Scriptlets are used to write Java statements inside a JSP page. They allow developers to perform calculations and processing.
+
+**3. JSP Expressions**
+
+Expressions are used to display the value of a Java expression directly in the generated HTML response.
+
+**4. JSP Declarations**
+
+Declarations are used to declare variables and methods that can be used in the JSP page.
+
+**5. JSP Implicit Objects**
+
+JSP provides predefined objects that can be used without explicitly creating them.
+
+Some important implicit objects are:
+
+- request – Used to access client request information.
+- response – Used to generate the response.
+- session – Used to maintain user session information.
+- out – Used to send output to the browser.
+- application – Used to access application-level information.
+
+## 5. Accepting User Input in JSP
+
+JSP can accept user input through HTML forms.
+
+An HTML form contains input fields such as text boxes, password fields, radio buttons and submit buttons.
+
+When the user submits the form, the entered information is sent to the server using HTTP GET or POST methods.
+
+The JSP page receives the submitted values through the request object. It can process these values using Java statements and display the result dynamically.
+
+For example, a JSP application can accept a user's name and display a personalized welcome message.
+
+## 6. Advantages of JSP
+
+1. JSP makes it easy to develop dynamic web pages.
+2. It supports Java programming and object-oriented concepts.
+3. It can interact with databases using JDBC.
+4. It is platform-independent.
+5. It supports reusable components.
+6. It separates presentation from business logic more effectively when used with suitable application architecture.
+7. It supports session management.
+
+## 7. Applications of JSP
+
+- Login and registration pages.
+- Student information systems.
+- Online shopping websites.
+- Banking applications.
+- Dynamic report generation.
+- Employee management systems.
+
+## 8. Conclusion
+
+Thus, we studied JSP technology and its working process. We understood how JSP accepts user input through HTML forms, processes the information on the server and displays dynamic output. We also studied JSP elements, directives, scriptlets, expressions and implicit objects.
